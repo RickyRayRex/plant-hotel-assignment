@@ -32,19 +32,12 @@ public class PlantHotel {
     
     plants.add(new Palm(LAURA_NAME, LAURA_HEIGHT_METERS));
     plants.add(new Palm(OLOF_NAME, OLOF_HEIGHT_METERS));
+    plants.add(new CarnivorousPlant(MEATLOAF_NAME, MEATLOAF_HEIGHT_METERS));
     
     // Omvandlar Igges höjd från centimeter till meter.
-    double iggeHeightMeters =
-        IGGE_HEIGHT_CENTIMETERS / CENTIMETERS_PER_METER;
+    double iggeHeightMeters = IGGE_HEIGHT_CENTIMETERS / CENTIMETERS_PER_METER;
     
     plants.add(new Cactus(IGGE_NAME, iggeHeightMeters));
-    
-    plants.add(
-        new CarnivorousPlant(
-            MEATLOAF_NAME,
-            MEATLOAF_HEIGHT_METERS
-        )
-    );
   }
   
   // Söker efter en växt med hjälp av dess namn.

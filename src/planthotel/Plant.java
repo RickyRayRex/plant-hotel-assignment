@@ -3,11 +3,8 @@ public abstract class Plant implements PlantInterface {
   
   private static final double MINIMUM_HEIGHT = 0.0;
   
-  private static final String EMPTY_NAME_ERROR =
-      "Plant name cannot be empty.";
-  
-  private static final String INVALID_HEIGHT_ERROR =
-      "Plant height must be positive and finite.";
+  private static final String EMPTY_NAME_ERROR = "Plant name cannot be empty.";
+  private static final String INVALID_HEIGHT_ERROR = "Plant height must be positive and finite.";
   
   /*
    * INKAPSLING:
