@@ -53,7 +53,6 @@ public class PlantHotel {
         return plant;
       }
     }
-    
     return null;
   }
 }
