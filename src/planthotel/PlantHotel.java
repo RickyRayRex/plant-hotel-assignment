@@ -44,7 +44,7 @@ public class PlantHotel {
             MEATLOAF_NAME,
             MEATLOAF_HEIGHT_METERS
         )
-              );
+    );
   }
   
   // Söker efter en växt med hjälp av dess namn.

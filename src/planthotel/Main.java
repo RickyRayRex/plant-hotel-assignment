@@ -5,26 +5,13 @@ import java.util.Locale;
 
 public class Main {
   
-  private static final String DIALOG_TITLE =
-      "Växthotellet Greenest";
-  
-  private static final String QUESTION =
-      "Vilken växt ska få vätska?";
-  
-  private static final String CANCEL_MESSAGE =
-      "Du avbröt programmet.";
-  
-  private static final String EMPTY_INPUT_MESSAGE =
-      "Du måste ange ett växtnamn.";
-  
-  private static final String INVALID_NAME_MESSAGE =
-      "Ange ett namn som innehåller minst en bokstav.";
-  
-  private static final String NOT_FOUND_MESSAGE =
-      "Det finns ingen växt med det namnet.";
-  
-  private static final String RESULT_FORMAT =
-      "%s behöver %s liter %s per dag.";
+  private static final String DIALOG_TITLE = "Växthotellet Greenest";
+  private static final String QUESTION = "Vilken växt ska få vätska?";
+  private static final String CANCEL_MESSAGE = "Du avbröt programmet.";
+  private static final String EMPTY_INPUT_MESSAGE = "Du måste ange ett växtnamn.";
+  private static final String INVALID_NAME_MESSAGE = "Ange ett namn som innehåller minst en bokstav.";
+  private static final String NOT_FOUND_MESSAGE = "Det finns ingen växt med det namnet.";
+  private static final String RESULT_FORMAT = "%s behöver %s liter %s per dag.";
   
   private static final String AMOUNT_FORMAT = "%.2f";
   private static final String SWEDISH_LOCALE = "sv-SE";
@@ -39,7 +26,7 @@ public class Main {
         QUESTION,
         DIALOG_TITLE,
         JOptionPane.QUESTION_MESSAGE
-                                                  );
+        );
     
     // Hanterar om användaren trycker på Avbryt.
     if (plantName == null) {
@@ -81,7 +68,7 @@ public class Main {
         Locale.forLanguageTag(SWEDISH_LOCALE),
         AMOUNT_FORMAT,
         waterNeed
-                                          );
+    );
     
     // Visar resultatet i en meddelanderuta.
     showMessage(
@@ -90,8 +77,8 @@ public class Main {
             selectedPlant.getName(),
             formattedAmount,
             liquidType.getDisplayName()
-                     )
-               );
+            )
+    );
   }
   
   // Kontrollerar om texten innehåller minst en bokstav.
@@ -113,6 +100,6 @@ public class Main {
         message,
         DIALOG_TITLE,
         JOptionPane.INFORMATION_MESSAGE
-                                 );
+   );
   }
 }
